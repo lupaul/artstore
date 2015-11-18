@@ -7,6 +7,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'font-awesome-rails'
 gem 'aasm'
+gem 'rails-i18n'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

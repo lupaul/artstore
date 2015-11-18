@@ -8,6 +8,7 @@
         <tr>
           <th width="80%">商品明細</th>
           <th>單價</th>
+          <th>數量</th>
         </tr>
       </thead>
       <tbody>
@@ -19,6 +20,9 @@
             </td>
             <td>
               <%= order_item.price %>
+            </td>
+            <td>
+              <%= order_item.quantity %>
             </td>
           </tr>
         <% end %>
@@ -50,12 +54,12 @@
         </tr>
         <tr>
           <td>
-            訂購人
+            收貨人
           </td>
         </tr>
         <tr>
           <td>
-            <%= @order_info.billing_name %> - <%= @order_info.billing_address %>
+            <%= @order_info.shipping_name %> - <%= @order_info.shipping_address %>
           </td>
         </tr>
       </tbody>
