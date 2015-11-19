@@ -5,7 +5,7 @@ module OrdersHelper
 	end
 
 	def render_order_paid_state(order)
-		if order.paid?
+		if order.is_paid?
 			"已付款喔！！"
 		else
 			"還沒付款喔你！！"
